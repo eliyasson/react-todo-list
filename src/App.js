@@ -1,11 +1,18 @@
 import React, { Component } from "react";
+import TodoInput from "./components/TodoInput";
+import TodoList from "./components/TodoList";
 
-function App() {
-  return (
-    <div >
-      hello from app component
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        Hello from main app
+        <TodoInput />
+        <TodoList />
+
+      </div>
+    );
+  }
 }
 
 export default App;
